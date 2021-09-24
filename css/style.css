@@ -1,0 +1,152 @@
+/* geral */
+html {
+	font-family: 'Cabin', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span {
+	margin: 0;
+	color: rgb(255, 255, 255);
+}
+a{
+    font-family: 'Cabin', sans-serif;
+}
+.container {
+	max-width: 1920px;
+	width: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* hide on desktop */
+.nav-container .btn-menumobile {
+	display: none;
+}
+
+/* header */
+header {
+	position: relative;
+	top: 0;
+	height: 20px;
+	width: 100%;
+}
+
+/* navbar */
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100px;
+	width: 100%;
+	z-index: 1;
+	background-color: #FFF;
+	border-bottom: 1px solid rgb(167, 167, 167);
+}
+
+nav:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.nav-container {
+	max-width: 1200px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo {
+	width: 70px;
+    margin-top: 15px;
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition:         transform .8s ease-in-out;
+}
+
+#logo:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.nav-container ul {
+	float: right;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
+
+.nav-container ul li {
+	list-style: none;
+	float: left;
+	margin: 0 15px;
+}
+
+.nav-container li a {
+	text-decoration: none;
+	color: #666;
+	transition: .5s;
+}
+
+.nav-container li a:hover {
+	color: #e90f0f;
+}
+
+/* banner */
+
+.altura{
+    height: 1500px;
+    background-color: #FFF;
+}
+#main-banner {
+	background: url('../imgs/banner.jpeg') no-repeat;
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 100px;
+    background-attachment: fixed;
+}
+
+
+#text {
+	position: relative;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 15em;
+	padding-bottom: 15em;
+	text-align: center;
+}
+
+#text h1 {
+	font-size: 60px;
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 380px;
+    margin-top: -70px;
+}
+
+#text p {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	font-size: 18px;
+	font-weight: 300;
+    margin-left: 400px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+#text a{
+    color: rgb(5, 5, 5);
+    background-color: rgb(255, 255, 255);
+    padding: 18px 40px;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    margin-left: 800px;
+
+    
+}
