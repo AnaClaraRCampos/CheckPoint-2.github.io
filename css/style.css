@@ -91,7 +91,7 @@ nav:after {
 }
 
 .nav-container li a:hover {
-	color: #e90f0f;
+	color: #e9540f;
 }
 
 /* banner */
@@ -147,6 +147,10 @@ nav:after {
     font-weight: 500;
     border-radius: 8px;
     margin-left: 800px;
+}
 
-    
+#text a:hover{
+    color: rgb(243, 239, 239);
+    background-color: rgba(214, 210, 210, 0.863);
+    transition-duration:0.9s;
 }
