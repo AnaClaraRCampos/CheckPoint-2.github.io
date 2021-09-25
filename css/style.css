@@ -13,6 +13,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 a{
     font-family: 'Cabin', sans-serif;
+    font-size: 19px;
 }
 .container {
 	max-width: 1920px;
@@ -94,12 +95,21 @@ nav:after {
 	color: #e9540f;
 }
 
+.nav-container .jumpman-tittle{
+	font-family: 'Bebas Neue', cursive;
+	text-decoration: none;
+	font-size: 50px;
+	color: black;
+	margin-left: 10px;
+	
+}
 /* banner */
 
 .altura{
-    height: 1500px;
+    height: 750px;
     background-color: #FFF;
 }
+
 #main-banner {
 	background: url('../imgs/banner.jpeg') no-repeat;
 	background-size: cover;
@@ -151,6 +161,267 @@ nav:after {
 
 #text a:hover{
     color: rgb(243, 239, 239);
-    background-color: rgba(214, 210, 210, 0.863);
+    background-color: #e9540fc7;
     transition-duration:0.9s;
 }
+
+
+/* blog container */
+#blog-container {
+	text-align: center;
+	padding: 5em 0;
+}
+
+#blog-container .p-center {
+	margin-bottom: 60px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+}
+
+#blog-container .title-center {
+	color: rgb(70, 65, 65);
+	font-family: 'Bebas Neue', cursive;
+	font-size: 40px;
+}
+
+.article-box {
+	display: inline-block;
+	width: 31%;
+	padding: 0 1%;
+	text-align: left;
+}
+
+
+.article-box img {
+	border-radius: 6px;
+	margin-bottom: 10px;
+}
+.img1, .img2, .img3{
+	width: 400px;
+	height: 400px;
+}
+
+.article-box h4 {
+	font-size: 24px;
+	margin-bottom: 15px;
+}
+
+.article-box h4 a {
+	text-decoration: none;
+	color: #666;
+	font-family: 'Cabin', sans-serif;
+}
+
+
+.article-date {
+	font-size: 13px;
+	margin-bottom: 15px;
+	color: black;
+}
+
+.article-resume {
+	font-size: 16px;
+	margin-bottom: 30px;
+	color: black;
+	font-family: 'Cabin', sans-serif;
+}
+
+
+/* footer */
+footer {
+	background-color: #666;
+	padding: 5em 0;
+	padding-bottom: 40px;
+	border-top: rgb(167, 167, 167);
+}
+
+footer h2, footer p{
+	color: #e9dfdf;
+	font-family: 'Bebas Neue', cursive;
+}
+
+footer a, footer span {
+	color: #e9dfdf;
+	font-family: 'Cabin', sans-serif;
+}
+
+footer h2 {
+	font-weight: 400;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+footer ul {
+	padding: 0;
+}
+
+footer li {
+	list-style: none;
+}
+
+.footer-box {
+	width: 31%;
+	padding: 1%;
+	float: left;
+}
+
+footer .wrapper:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.company-footer {
+	width: 80%;
+	margin-left: 45px;
+}
+
+.company-footer h2 {
+	margin-top: 20px;
+}
+
+.company-footer h2, .company-footer p {
+	margin-bottom: 20px;
+}
+
+.footer-list li {
+	margin-bottom: 15px;
+}
+
+.footer-list a {
+	transition: 0.5s;
+}
+
+.footer-list a:hover {
+	color: #FFF;
+}
+
+.footer-list li:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+.articles-footer {
+	width: 80%;
+}
+
+.footer-list.footer-article-list span {
+	display: block;
+	float: none;
+}
+
+.fab {
+	font-size: 30px;
+	margin-right: 10px;
+	float: left;
+}
+
+.footer-list li span {
+	float: left;
+	height: 30px;
+	line-height: 30px;
+}
+
+.footer-bottom {
+	border-top: 1px solid #B2B2B2;
+}
+
+.footer-bottom p {
+	font-weight: 600;
+	margin-top: 40px;
+}
+
+/* BLOG1 */
+
+/* Blog Container1 */
+#main-banner1 {
+	margin-top: 80px;
+	width: 100%;
+}
+
+#text1 h1{
+	position: absolute;
+	font-size: 60px;
+	text-align: center;
+    font-family: 'Bebas Neue', cursive;
+	color: #fff;;	
+	top: 500px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
+.altura1{
+    height: 0px;
+    background-color: #FFF;
+}
+
+
+#blog-container1 {
+	text-align: center;
+	padding: 5em 0;
+}
+
+
+#blog-container1 .p-center1 {
+	margin-bottom: 60px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 32px;
+}
+#blog-container1 .p-center2,.p-center3 {
+	margin-bottom: 60px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 30px;
+}
+
+/* BLOG 2 */
+
+
+#blog-container1 h2 {
+	margin-bottom: 60px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 3px;
+	font-size: 30px;
+}
+
+#blog-container1 h3 {
+	margin-bottom: 60px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 34px;
+	font-size: 30px;
+}
+
+#text2 h1{
+	position: absolute;
+	font-size: 60px;
+	text-align: center;
+    font-family: 'Bebas Neue', cursive;
+	color: #fff;;	
+	top: 500px;
+	margin-right: 20px;
+	margin-left: 40px;
+	margin-bottom: 0px;
+} 
