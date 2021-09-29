@@ -1,26 +1,37 @@
-/* geral */
+/* GERAL */
 html {
 	font-family: 'Cabin', sans-serif;
+	scroll-behavior: smooth;
 }
 
 body {
 	margin: 0;
+	overflow-x: hidden; 
 }
 
-h1, h2, h3, h4, h5, p, span {
-	margin: 0;
-	color: rgb(255, 255, 255);
-}
-a{
-    font-family: 'Cabin', sans-serif;
-    font-size: 19px;
-}
+/* CONFIGURAÇÕES SEMELHANTES ENTRES AS PÁGINAS */
+
 .container {
 	max-width: 1920px;
 	width: 100%;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+
+
+
+
+
+h1, h2, h3, h4, h5, p, span {
+	margin: 0;
+	color: rgb(255, 255, 255);
+}
+
+a{
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 19px;
 }
 
 /* hide on desktop */
@@ -103,6 +114,8 @@ nav:after {
 	margin-left: 10px;
 	
 }
+
+
 /* banner */
 
 .altura{
@@ -115,19 +128,23 @@ nav:after {
 	background-size: cover;
 	background-position: 0 55%;
 	position: relative;
-	margin-top: 100px;
     background-attachment: fixed;
 }
 
-
+.altura3{
+	height: 750px;
+    background-color: #FFF;
+}
 #text {
 	position: relative;
 	width: 80%;
+	margin-top: 80px;
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 15em;
 	padding-bottom: 15em;
 	text-align: center;
+	line-height: 30px;
 }
 
 #text h1 {
@@ -152,11 +169,12 @@ nav:after {
     background-color: rgb(255, 255, 255);
     padding: 18px 40px;
     text-decoration: none;
-    font-family: 'Cabin', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
     font-size: 20px;
     font-weight: 500;
     border-radius: 8px;
     margin-left: 800px;
+	letter-spacing: 0.5px;
 }
 
 #text a:hover{
@@ -169,15 +187,17 @@ nav:after {
 /* blog container */
 #blog-container {
 	text-align: center;
-	padding: 5em 0;
+	padding: 1em 0;
+
 }
 
 #blog-container .p-center {
 	margin-bottom: 60px;
 	color: rgb(70, 65, 65);
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 20px;
 }
+
 
 #blog-container .title-center {
 	color: rgb(70, 65, 65);
@@ -188,14 +208,14 @@ nav:after {
 .article-box {
 	display: inline-block;
 	width: 31%;
-	padding: 0 1%;
-	text-align: left;
+	padding: 0 1%;	
 }
 
 
 .article-box img {
 	border-radius: 6px;
 	margin-bottom: 10px;
+	margin-left: 10px;
 }
 .img1, .img2, .img3{
 	width: 400px;
@@ -205,11 +225,12 @@ nav:after {
 .article-box h4 {
 	font-size: 24px;
 	margin-bottom: 15px;
+	margin-left: 10px;
 }
 
 .article-box h4 a {
 	text-decoration: none;
-	color: #666;
+	color: rgb(70, 65, 65);
 	font-family: 'Cabin', sans-serif;
 }
 
@@ -217,14 +238,17 @@ nav:after {
 .article-date {
 	font-size: 13px;
 	margin-bottom: 15px;
-	color: black;
+	color: rgb(107, 106, 106);
+	margin-left: 10px;
 }
 
 .article-resume {
 	font-size: 16px;
 	margin-bottom: 30px;
-	color: black;
-	font-family: 'Cabin', sans-serif;
+	color: #666;
+	font-family: 'Fjalla One', sans-serif;
+	letter-spacing: 0.5px;
+	margin-left: 10px;
 }
 
 
@@ -256,10 +280,12 @@ footer a {
 
 footer ul {
 	padding: 0;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 footer li {
 	list-style: none;
+	font-family: 'Fjalla One', sans-serif;
 }
 
 .footer-box {
@@ -354,6 +380,18 @@ footer .wrapper:after {
 	margin-left: 20px;
 	margin-bottom: 0px;
 }
+
+#text3 h1{
+	position: absolute;
+	font-size: 60px;
+	text-align: center;
+    font-family: 'Bebas Neue', cursive;
+	color: rgb(12, 9, 9);;	
+	top: 500px;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 0px;
+}
 .altura1{
     height: 0px;
     background-color: #FFF;
@@ -393,7 +431,7 @@ footer .wrapper:after {
 #blog-container1 h2 {
 	margin-bottom: 60px;
 	color: rgb(70, 65, 65);
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 20px;
 	text-align: center;
 	margin-right: 50px;
@@ -405,7 +443,7 @@ footer .wrapper:after {
 #blog-container1 h3 {
 	margin-bottom: 60px;
 	color: rgb(70, 65, 65);
-	font-family: 'Cabin', sans-serif;
+	font-family: 'Fjalla One', sans-serif;
 	font-size: 20px;
 	text-align: justify;
 	margin-right: 50px;
@@ -425,3 +463,491 @@ footer .wrapper:after {
 	margin-left: 40px;
 	margin-bottom: 0px;
 } 
+
+#button-blog a.button-1{
+	color: rgb(255, 255, 255);
+    background-color: #666;
+    padding: 18px 40px;
+    text-decoration: none;
+    font-family: 'Cabin', sans-serif;font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    top: 15px;
+}
+
+
+#button-blog a.button-1:hover{
+    color: #FFF;
+    background-color: #e9540f;
+    transition-duration:0.5s;
+}
+
+#button-blog {
+	text-align: center;
+	padding: 5em 0;
+}
+
+.altura2{
+    height: 90px;
+    background-color: #FFF;
+}
+
+#blog-container2 .title-center1 {
+	color: rgb(70, 65, 65);
+	font-family: 'Bebas Neue', cursive;
+	font-size: 70px;
+	margin-bottom: 60px;
+}
+
+#blog-container2 {
+	text-align: center;
+	padding: 5em 0;
+}
+
+#blog-container .title-center2 {
+	color: rgb(70, 65, 65);
+	font-family: 'Bebas Neue', cursive;
+	font-size: 70px;
+	margin-bottom: 5px;
+}
+
+#text4 h1 {
+	font-size: 70px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: -100px;
+	text-align: center;
+}
+
+#blog-container4 .p-center4 {
+	margin-bottom: 50px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 32px;
+}
+
+#main-banner4 {
+	margin-top: 80px;
+    background-attachment: fixed;
+}
+
+#main-banner5 {
+	margin-top: 80px;
+    background-attachment: fixed;
+}
+
+#blog-container5 .p-center5 {
+	margin-bottom: 50px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 32px;
+}
+
+#main-banner6 {
+	margin-top: 80px;
+    background-attachment: fixed;
+}
+
+#blog-container6 .p-center6 {
+	margin-bottom: 50px;
+	color: rgb(70, 65, 65);
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	margin-right: 50px;
+	margin-left: 50px;
+	line-height: 32px;
+}
+
+#text5 h1{
+	position: absolute;
+	font-size: 60px;
+	text-align: center;
+    font-family: 'Bebas Neue', cursive;
+	color: #fff;;	
+	top: 580px;
+	margin-right: 20px;
+	margin-left: 570px;
+	margin-bottom: 0px;
+}
+#main-banner3 {
+	background-size: cover;
+	background-position: 0 55%;
+	position: relative;
+	margin-top: 75px;
+    background-attachment: fixed;
+}
+
+.main-jgd{
+	display: block ;
+}
+
+.wrapper1 {
+	height: -10px;
+	/* Desabilitar o efeito x overflow evita que uma barra de rolagem vertical seja adicionada. */
+	overflow-x: hidden;
+	/* Habilita a rolagem da página. */
+	overflow-y: auto;
+	/* Configura a perspectiva para 2px. Essa é a distância simulada do viewport para os objetos da página.*/
+	perspective: 2px;
+  }
+  
+  .section {
+	position: relative;
+	height: 65vh;
+	width: 50.5%;
+	/* Formatação do texto. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  }
+  
+  .section1{
+	position: relative;
+	height: 65vh;
+	margin-left: 680px;
+	width: 50%;
+	/* Formatação do texto. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  }
+  .section2{
+	position: relative;
+	height: 65vh;
+	width: 50.5%;
+	/* Formatação do texto. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+  }
+  .section3{
+	position: relative;
+	height: 65vh;
+	width: 50.5%;
+	margin-left: 680px;
+	/* Formatação do texto. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  }
+  .section4{
+	position: relative;
+	height: 65vh;
+	width: 50.5%;
+	/* Formatação do texto. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  }
+
+  .section5{
+	position: relative;
+	height: 65vh;
+	width: 50.5%;
+	margin-left: 680px;
+	/* Formatação do texto. */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+  }
+  .parallax::after {
+	content: " ";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-size: 100%;
+	
+  }
+  
+  /*Ajusta a imagem de plano de fundo. */
+  .bg1::after {
+	background-image: url('../imgs/jogadores/antetokounmpo.jpg');
+	background-attachment: fixed;
+	background-size: 110vh;
+	background-position-x:0%;
+  }
+  
+  .bg2::after {
+	background-image: url('../imgs/jogadores/kobB.jpg');
+	background-attachment: fixed;
+	background-size: 110vh;
+  }
+  
+  .bg3::after{
+	background-image: url("../imgs/jogadores/michaeljordan.jpg");
+	background-attachment: fixed;
+	background-size: 102vh;
+	background-position-x:1%;
+  }
+
+  .bg4::after {
+	background-image: url('../imgs/jogadores/kyrie-irving.jpg');
+	background-attachment: fixed;
+	background-size: 104vh;
+	background-position-x:-1%;
+  }
+  .bg5::after{
+	background-image: url('../imgs/jogadores/lebron.jpg');
+	background-attachment: fixed;
+	background-size: 110vh;
+	background-position-x:0%;
+  }
+  .bg6::after{
+	background-image: url("../imgs/jogadores/dennis-rodman.jpg");
+	background-attachment: fixed;
+	background-size: 50%;
+	background-position-x: 0.9%;
+
+  }
+ 
+  #main-banner2 {
+	background: url('../imgs/banner7.jpg') no-repeat;
+	background-size: 100%;
+	position: relative;
+    background-attachment: fixed;
+	height: 100vh;
+}
+
+#text7 h1{
+	text-align: center;
+	color: rgb(255, 251, 251);
+	font-family: 'Bebas Neue', cursive;
+	margin-top: -100px;
+	font-size: 60px;
+}
+
+.jogador1 h2 a {
+	
+	color:rgb(70, 68, 68);
+	font-family: 'Bebas Neue', cursive;
+	margin-left: 1000px;
+	font-size: 50px;
+	text-shadow: none;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: transform .2s;
+	display: block;
+}
+
+.jogador1 h2 a:hover{
+	opacity: 1.0;
+	transition-duration: 0.8s;
+	transform: scale(1.1);
+}
+
+.jogador5 h2 a{
+	color:rgb(70, 68, 68);
+	font-family: 'Bebas Neue', cursive;
+	margin-left: 850px;
+	font-size: 50px;
+	text-shadow: none;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: transform .2s;
+	display: block;
+	
+}
+
+.jogador5 h2 a:hover{
+	opacity: 1.0;
+	transition-duration: 0.8s;
+	transform: scale(1.1);
+}
+
+.jogador3 h2 a {
+	color:rgb(70, 68, 68);
+	font-family: 'Bebas Neue', cursive;
+	margin-left: 850px;
+	font-size: 50px;
+	text-shadow: none;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: transform .2s;
+	display: block;
+	
+}
+
+.jogador3 h2 a:hover{
+	opacity: 1.0;
+	transition-duration: 0.8s;
+	transform: scale(1.1);
+}
+.jogador2 h2 a{
+	color:rgb(70, 68, 68);
+	font-family: 'Bebas Neue', cursive;
+	margin-right: 860px;
+	font-size: 50px;
+	text-shadow: none;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: transform .2s;
+	display: block;
+}
+.jogador2 h2 a:hover{
+	opacity: 1.0;
+	transition-duration: 0.8s;
+	transform: scale(1.1);
+}
+.jogador6 h2 a{
+	color:rgb(70, 68, 68);
+	font-family: 'Bebas Neue', cursive;
+	margin-right: 850px;
+	font-size: 50px;
+	text-shadow: none;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: transform .2s;
+	display: block;
+}
+.jogador6 h2 a:hover{
+	opacity: 1.0;
+	transition-duration: 0.8s;
+	transform: scale(1.1);
+}
+.jogador4 h2 a{
+	color:rgb(70, 68, 68);
+	font-family: 'Bebas Neue', cursive;
+	margin-right: 850px;
+	font-size: 50px;
+	text-shadow: none;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: transform .2s;
+	display: block;
+}
+.jogador4 h2 a:hover{
+	opacity: 1.0;
+	transition-duration: 0.8s;
+	transform: scale(1.1);
+}
+
+#text8 h1{
+	font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    margin-top: -130px;
+	color: #FFF;
+}
+
+/* GALERIA DE IMAGENS */
+
+ #galeria h1{
+	font-size: 90px;
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+margin-top: 50px;
+	color: rgb(70, 65, 65);
+	z-index: 5;}
+
+#altura-slider{
+height: 1570px;
+}
+.altura-article{
+	margin-top: 50px;
+}
+.altura-article1{
+	margin-top: 20px;
+}
+.sldr{
+	margin: 0; padding: 0;
+	margin-top: 100px;
+}
+
+
+
+
+
+.login-page p{
+	color: #fff;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 20px;
+	margin-left: 180px;
+}
+input[type="email"], input[type="password"]{
+    border-radius:8px;
+    border-width: 1px;
+    width: 300px;
+    height: 30px;
+	margin-bottom: 20px;
+	
+}
+input[type="email"]{
+	margin-left: 8px;
+}
+
+input[type="password"]{
+		margin-left: 5px;
+}
+
+form{
+	margin-right: 100px;
+	margin-bottom: 100px ;
+	margin-top: 130px;
+	
+}
+
+.login-page{
+	background-color: #666;
+	margin: 90px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+	margin-top: 80px;
+	margin-right: 300px;
+	padding-bottom: 5px;
+	margin-left:300px;
+
+	
+}
+
+button[type="submit"]{
+    background-color: #e9540f;
+    border-radius: 20px;
+    width: 200px;
+    height: 40px;
+    font-family: 'Fjalla One', sans-serif;
+	font-size: 17px;
+	color: #FFF;
+	letter-spacing: 1px;
+    border-color: rgba(209, 3, 3, 0);
+    transition: all 0.5s ease-in-out;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+/* Animação Botão Enviar */
+button[type="submit"]:hover{
+	background-color: #FFF;
+	color: black;
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+    transition:  0.5s;
+ 
+}
+
+#login h1{
+	color: rgb(255, 255, 255);
+	margin-bottom: 60px;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 70px;
+	margin-left: 80px;
+	padding-top: 40px;
+	
+}
